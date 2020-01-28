@@ -1,10 +1,5 @@
-const greeting = 'Hello World';
-console.log(greeting);
+import Person from "./person";
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
+const jack = new Person("Jack", 24);
 
-getData('https://jsonplaceholder.typicode.com/posts');
+console.log(jack.getAge());
